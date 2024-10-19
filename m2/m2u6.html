@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Georgia Niamh E-portfolio</title>
+        <!DOCTYPE html>
+        <style>
+            body {
+                background-image: ('banner.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+    }
+        </style>
+        <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="index is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1 id="logo"><a href="../index.html">Georgia Niamh<span></span></a></h1>
+					<nav id="nav">
+						<ul>
+							<li class="current"><a href="../index.html">Welcome</a></li>
+							<li class="submenu">
+								<a href="#">Layouts</a>
+								<ul>
+									<li><a href="../left-sidebar.html">Left Sidebar</a></li>
+									<li><a href="../right-sidebar.html">Right Sidebar</a></li>
+									<li><a href="../no-sidebar.html">No Sidebar</a></li>
+									<li><a href="../contact.html">Contact</a></li>
+									<li class="submenu">
+										<a href="#">Submenu</a>
+										<ul>
+											<li><a href="#">Dolore Sed</a></li>
+											<li><a href="#">Consequat</a></li>
+											<li><a href="#">Lorem Magna</a></li>
+											<li><a href="#">Sed Magna</a></li>
+											<li><a href="#">Ipsum Nisl</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#" class="button primary">Sign Up</a></li>
+						</ul>
+					</nav>
+				</header>
+
+					<!-- Three -->
+						<section class="wrapper style3 container special">
+
+							<header class="major">
+								<h2>Unit 6</h2>
+							</header>
+							<row>
+								<p>
+								<h3>Coding task:</h3>
+								Question 1: 
+								The code lacked indentations that made the code error. I added indentations to the code such as for the if statement.
+								<pre style="text-align: left;">
+									<code>
+									def factorial(n):
+										"""Return factorial of n"""
+										if n == 0:
+											return 1
+										else:
+											return n * factorial(n - 1)
+									</code>
+								</pre>
+								</br>
+								Question 2:
+								</br>
+								Python 2- In Python 2, raw_input() is used, but in Python 3, it should be replaced by input(). The if choice == "decode": block is incorrectly indented inside the if choice == "encode": block. It needs to be at the same level as the encode condition. When shifting the index for the letters in the encode and decode logic, it can exceed the bounds of the letters list. It should use modulus (%) to wrap around the list.
+								</br>
+								Question 3: 
+								</br>
+								The output for the errors from Flake8  are very similar to those in pylint but Flake8 gives more detail and it is written in  an easier to understand way. 
+								Use of input(): I replaced raw_input() with input() for Python 3 compatibility. Additionally, I converted the choice input to lowercase with .lower() to make it case-insensitive.
+								Indentation of the decode block: I moved the decode block outside the encode block to ensure it only executes when the user selects "decode".
+								Modulus (%) to prevent out-of-range index errors: Both in encoding and decoding, I used % len(letters) to make sure the index stays within the bounds of the letters string. Without this, indexing can go out of range when shifting letters.
+								Printing the result: Changed print encoded to print(encoded) for Python 3 compatibility.
+								</br>	
+								Question 4: 
+								</br>
+								I think the code has a low cyclomatic complexity because it does not have too many branches and the only real contributor to the complexity is the if statement and this is only seen once making the complexity low.
+								</p>
+								<p>
+								<h3>Group work:</h3> 
+								This week we finished off the group project we had a meeting where we proof read the final document and began to check all the references. We also took this time to make any final changes and work out the order of the document in terms of what needed to be an appendices. Overall, we all were pretty happy with the final design although I did see somethings that I might change in the final design. 
+								</p>
+								<p>
+								<h3>Seminar summary:</h3>
+								In this weeks seminar we looked at the use of linters and their benefits. We mainly focused on Pylint. We discussed why linters are used and their benefits. We also looked at how encoding worked and how this could be implemented within our code. After the seminar I downloaded Pylint and tested it out with some projects that I had been working on. Overall, I was impressed with how well it picked up on small issues such as when I accidentally missed a colon for an if statement. 
+								</p>
+							</row>
+						</section>
+
+				</article>
+
+		
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="icons">
+						<li><a href="https://x.com/gnh_98" class="icon brands circle fa-twitter"><span class="label">Twitter</span></a></li>
+						
+						
+						<li><a href="https://github.com/GeorgiaNiamh" class="icon brands circle fa-github"><span class="label">Github</span></a></li>
+						
+					</ul>
+
+					<ul class="copyright">
+						<li>&copy; GeorgiaNiamh</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

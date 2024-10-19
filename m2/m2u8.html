@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Georgia Niamh E-portfolio</title>
+        <!DOCTYPE html>
+        <style>
+            body {
+                background-image: ('banner.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+    }
+        </style>
+        <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="index is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1 id="logo"><a href="../index.html">Georgia Niamh<span></span></a></h1>
+					<nav id="nav">
+						<ul>
+							<li class="current"><a href="../index.html">Welcome</a></li>
+							<li class="submenu">
+								<a href="#">Layouts</a>
+								<ul>
+									<li><a href="../left-sidebar.html">Left Sidebar</a></li>
+									<li><a href="../right-sidebar.html">Right Sidebar</a></li>
+									<li><a href="../no-sidebar.html">No Sidebar</a></li>
+									<li><a href="../contact.html">Contact</a></li>
+									<li class="submenu">
+										<a href="#">Submenu</a>
+										<ul>
+											<li><a href="#">Dolore Sed</a></li>
+											<li><a href="#">Consequat</a></li>
+											<li><a href="#">Lorem Magna</a></li>
+											<li><a href="#">Sed Magna</a></li>
+											<li><a href="#">Ipsum Nisl</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#" class="button primary">Sign Up</a></li>
+						</ul>
+					</nav>
+				</header>
+
+					<!-- Three -->
+						<section class="wrapper style3 container special">
+
+							<header class="major">
+								<h2>Unit 8</h2>
+							</header>
+							<row>
+								<p>
+								<h3>Discussion Topic:</h3>
+								TrueCrypt has been found to be insecure due to several security issues. This post shall highlight these issues and the potential risks they pose to users. In the article TrueCrypt cryptanalysis by Junestam & Guigo (2014) they highlight that 11 vulnerabilities were discovered within the software. These risks ranged from low severity to medium severity such as a weak key derivation algorithm and potential leakage of sensitive information from kernel stacks. These vulnerabilities indicate that TrueCrypt does indeed have unfixed security issues.  
+							</br>
+								However, the audit (Junestam & Guigo, 2014) did not find any backdoors or intentional security flaws, and many of the issues seem to be fixable bugs rather than critical security holes. The weaknesses, such as outdated cryptographic algorithms demonstrate that the software may be vulnerable to brute force attacks and information leaks. Although this could be expected due to updates being discontinued in 2014.
+							</br>
+								Given the findings in the report, I would not recommend TrueCrypt as the most secure storage option without reservations, especially since even its developers say not to use it.
+							</br>
+								If I were to recommend it with caution, I would add the following caveats:
+							</br>
+								•The system uses outdated cryptography meaning it is easier to do a brute-force attack. 
+							</br>
+								•The software has known vulnerabilities, such as integer overflows and data leakage issues that remain unresolved. 
+							</br>
+								•TrueCrypt is no longer maintained, so any new vulnerabilities discovered will not be fixed.
+							</br>
+								When looking at the TrueCrypt webpage (TrueCrypt, 2014) there is warning about its vulnerabilities to me this indicates that it should only be used and recommended with extreme caution as it could run a security risk for others.
+							</br></br>
+								References: 
+							</br>
+								Junestam, A. & Guigo, N. (2014) Open Crypto Audit Project TrueCrypt: Security Assessment.
+							</br>
+								TrueCrypt (2014) TrueCrypt. Available from: https://truecrypt.sourceforge.net/ [Accessed October 1st, 2024]. 
+							</br></br>
+								Ontology design
+							</br>
+								This design organizes TrueCrypt’s weaknesses based on their severity and shows how different user goals may be affected by each weakness.
+							</br>
+								1. Medium Severity Issues
+							</br>
+								Weak Volume Header Key Derivation Algorithm: TrueCrypt uses a weak key derivation algorithm, making it easier to brute-force passwords. This is a serious issue for users encrypting highly sensitive data, like bank details. 
+							</br>
+								Sensitive Information Paging: Sensitive information, like encryption keys, can be written to disk during low memory situations if the system disk is not encrypted. This would be an issue for users who haven’t encrypted their disk.
+							</br>
+								Bootloader Decompressor Issues: The bootloader has weaknesses like out-of-bounds reads, which could be exploited by attackers with physical access to the disk. 
+							</br>
+								Improper Memory Wiping: TrueCrypt uses the memset() function to clear sensitive data in some cases, but this can be optimized out by the compiler, leaving data in memory. 
+							</br>
+								2. Low Severity Issues
+							</br>
+								Kernel Pointer Disclosure: TrueCrypt leaks kernel pointers, which can help attackers bypass security mechanisms like ASLR. 
+							</br>
+								Integer Overflow in Disk Verification: An integer overflow could allow a denial-of-service (DoS) attack, causing the system to crash or malfunction. 
+							</br>
+								Information Leakage in IOCTL_OPEN_TEST: Local attackers could exploit weak access control to learn details about files. 
+								</p>
+								<p>
+								<h3>Cryptography Programming Exercise:</h3>
+								Here’s a Python program that reads a text file, applies Caesar Cipher encryption with a shift of 3, and saves the encrypted output to another file.
+							</br>
+								Why Did I Select the Caesar Cipher Algorithm?
+							</br>
+								I chose Caesar Cipher because it is one of the simplest and most well-known encryption techniques and it is a technique I have some familiarity with. The key reasons for choosing Caesar Cipher:
+							</br>
+								Simplicity: It is easy to understand and implement, making it accessible. The concept of shifting characters by a fixed number of positions in the alphabet provides a basic understanding of how encryption works without getting into something more complex.
+							</br>
+								Demonstration Value: The Caesar Cipher helps illustrate the fundamental concept of encryption (transforming plaintext into ciphertext based on a key).
+							</br>
+								Would It Meet GDPR Regulations?
+							</br>
+								No, the Caesar Cipher would not meet GDPR regulations for protecting sensitive data. 
+							</br>
+								The Caesar Cipher is insecure by modern standards because it can be easily broken using simple techniques like frequency analysis or brute force. With only 25 possible shifts (ignoring the shift of 0), an attacker can quickly try all possibilities and decrypt the message. GDPR expects encryption to be robust against attacks.
+							</br>
+								GDPR recommends the use of modern cryptographic standards for encryption because they offer a high level of security. These algorithms are tested against various attack vectors and are widely trusted by security professionals.
+							</br>
+								<img src="../images/unit8-1.png">
+								</p>
+								<p>
+								<h3>Project update:</h3>
+								This week was mainly spent creating functions. I managed to create the encryption.py file by using Bcrypt. This should encrypt the users’ passwords. I also added in the log in and create account screen. Screenshots below: 
+							</br>
+								<img src="../images/unit8-2.png">
+								<img src="../images/unit8-3.png">
+								</p>
+							</row>
+						</section>
+
+				</article>
+
+		
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="icons">
+						<li><a href="https://x.com/gnh_98" class="icon brands circle fa-twitter"><span class="label">Twitter</span></a></li>
+						
+						
+						<li><a href="https://github.com/GeorgiaNiamh" class="icon brands circle fa-github"><span class="label">Github</span></a></li>
+						
+					</ul>
+
+					<ul class="copyright">
+						<li>&copy; GeorgiaNiamh</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
