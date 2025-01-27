@@ -1,0 +1,489 @@
+<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Georgia Niamh E-portfolio</title>
+        <!DOCTYPE html>
+        <style>
+            body {
+                background-image: ('banner.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+    }
+        </style>
+        <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="./assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="./assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="index is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1 id="logo"><a href="./index.html">Georgia Niamh<span></span></a></h1>
+					<nav id="nav">
+						<ul>
+							<li class="current"><a href="./index.html">Welcome</a></li>
+							<li class="submenu">
+								<a href="#">Layouts</a>
+								<ul>
+									<li><a href="./left-sidebar.html">Left Sidebar</a></li>
+									<li><a href="./right-sidebar.html">Right Sidebar</a></li>
+									<li><a href="./no-sidebar.html">No Sidebar</a></li>
+									<li><a href="./contact.html">Contact</a></li>
+									<li class="submenu">
+										<a href="#">Submenu</a>
+										<ul>
+											<li><a href="#">Dolore Sed</a></li>
+											<li><a href="#">Consequat</a></li>
+											<li><a href="#">Lorem Magna</a></li>
+											<li><a href="#">Sed Magna</a></li>
+											<li><a href="#">Ipsum Nisl</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#" class="button primary">Sign Up</a></li>
+						</ul>
+					</nav>
+				</header>
+
+					<!-- Three -->
+						<section class="wrapper style3 container special">
+
+							<header class="major">
+								<h2>Module 3: Object Oriented Programming</h2>
+							</header>
+							<row>
+								<p>
+								<h2>Unit 1:</h2>
+                                <h4>Reflection</h4>
+								Having read ‘Think Python’ chapter 15 I now have a more nuanced understanding of the use classes and objects within python code and how these are fundamental within object-oriented programming. I experimented with the concepts from chapter 15 by completing the exercises. 
+                                An image of the code I wrote for exercises can be found below. These exercises allowed for my understanding of objects and classes to be tested and refined. I found that this assisted in solidify my knowledge of this area further which should aid in its use within this module and beyond. 
+								</p>
+								<p>
+								<h3></h3>  
+								</p>
+								<p>
+								<h3></h3>
+								Below is an image of the code I completed for Chapter 15 of 'Think Python'
+								</br>
+								<img src="./images/M3 images/unit1.png">
+							</p>
+								<p>
+									<strong>References:</strong><br>
+									<ul>
+									  <li>
+                                        Downey, A. (2015) Think Python How to Think Like a Computer Scientist. 2nd edition. Needham, Massachusetts: Green Tea Press. Available at: https://greenteapress.com/thinkpython2/thinkpython2.pdf (Accessed 27 October 2024)
+									</ul>
+								  </p>
+							</row>
+				</article>
+                <header class="major">
+                </header>
+                <row>
+                    <p>
+                    <h2>Unit 2:</h2>
+                    <h4>Work:</h4>
+                    <h5>Time 1</h5>
+                    The code defines a class Time to represent the time of day. The class has three attributes: hour, minute, and second. It also defines several functions that work with Time objects.
+                    </br>-print_time(t): This function takes a Time object as input and prints it in a human-readable format (e.g., 12:00:00).
+                    </br>-int_to_time(seconds): This function takes an integer number of seconds since midnight and converts it into a Time object.
+                    </br>-time_to_int(time): This function takes a Time object and converts it into an integer number of seconds since midnight.
+                    </br>-add_times(t1, t2): This function takes two Time objects as input and returns a new Time object that represents the sum of the two input times.
+                    </br>-valid_time(time): This function takes a Time object and checks whether it is a valid time (i.e., all of its attributes are within the expected ranges).
+                    The main function demonstrates how to use these functions. It creates a Time object to represent noon (12:00:00), then creates another Time object to represent the movie's run time (109 minutes), and then uses the add_times function to compute the end time of the movie.
+                    <h6>key concepts used in the code:</h6>
+                    </br>-Classes and objects: The code defines a class Time to represent the concept of time of day. Each Time object is an instance of the class and has its own attributes (hour, minute, and second).
+                    </br>-Functions: The code defines several functions that operate on Time objects. These functions encapsulate the logic for working with times.
+                    </br>-Attributes: The Time class has three attributes: hour, minute, and second. These attributes store the state of a particular Time object.
+                    </br>-Methods: The Time class does not define any methods (functions that are defined within a class and operate on its instances). However, the code does define several functions that work with Time objects. 
+                    
+                    <h5>Time 2</h5> 
+                    <h6>Similarities</h6>
+                    Both pieces of code define a class Time to represent the time of day. The class has similar attributes (hour, minute, and second) and some of the same functionality:
+                    </br>-Converting between seconds since midnight and a Time object (int_to_time and time_to_int).
+                    </br>-Printing a time in a human-readable format (print_time or __str__).
+                    </br>-Checking if a Time object represents a valid time (is_valid).
+                    <h6>Differences</h6>
+                    The second piece of code introduces several new features and improvements over the first code:
+                    </br>-Constructor: The second code defines a constructor (__init__) for the Time class. This allows you to create Time objects by specifying the hour, minute, and second directly. The first code did not have a constructor, and you had to set the attributes of a Time object after creating it.
+                    </br>-Rich comparison methods: The second code defines the __lt__, __gt__, and other comparison methods for the Time class using is_after. This allows you to use comparison operators like < and > with Time objects. The first code did not define these methods.
+                    </br>-Arithmetic operators: The second code defines the __add__ and __radd__ methods for the Time class. This allows you to add Time objects together or add a number of seconds to a Time object using the + operator. The first code only had a separate add_times function for adding two Time objects.
+                    </br>-Time increment: The second code defines an increment method that adds a number of seconds to a Time object and returns a new Time object. The first code did not have this functionality.
+                    </br>-Polymorphism: The second code demonstrates how the + operator can be used polymorphically with Time objects and numbers. The first code did not show this.
+                    </br>-List comprehensions: The second code uses a list comprehension to add multiple Time objects together. The first code did not use list comprehensions.
+                    <h6>Overall</h6>
+                    The second code is a more comprehensive and object-oriented approach to representing time compared to the first code. It provides a more natural way to create, manipulate, and compare time objects.
+                    </p>
+                    <p>
+                    <h3></h3>  
+                    </p>
+                    <p>
+                    <h3></h3>
+                    </br>
+                </p>
+                    <p>
+                        <strong></strong><br>
+                        <ul>
+                      </p>
+                </row>
+                <header class="major">
+                    <h2></h2>
+                </header>
+                <row>
+                    <p>
+                    <h2>Unit 3:</h2>
+                    <h4>UML in the SDLC</h4>
+                    Thinking about the Software Development Life Cycle (SDLC), it's not a rigid, linear process but rather an iterative and often overlapping set of phases. Different UML diagrams shine in different phases:
+                    </br>- Requirements/Analysis: This is where what the system needs to do is thought about. Use Case diagrams are fantastic here for capturing user interactions and system responses. Class diagrams can start to emerge as you identify key concepts and their relationships. Activity diagrams can help visualise workflows and processes.
+                    </br>- Design: This focuses on how the system will work. Class diagrams become more detailed, showing attributes, operations, and relationships. Sequence diagrams and Communication diagrams (which are similar but focus on object organisation) are great for illustrating interactions between objects over time. State Machine diagrams are important for modelling the behaviour of objects with distinct states and transitions. Component diagrams and Deployment diagrams also come into play to show the system's physical structure and deployment environment.
+                    </br>- Implementation: While code is the primary focus here, diagrams can still be helpful for understanding complex parts of the system or for reverse engineering existing code. Class diagrams and Sequence diagrams can be useful for this.
+                    </br>- Testing: Diagrams, particularly Use Case diagrams and Activity diagrams, can inform test case design by providing a visual representation of system behaviour and user interactions.
+                    </br>- Maintenance: When making changes or fixing bugs, diagrams can be invaluable for understanding the system's structure and behaviour, especially if the original documentation is lacking.
+                    <h4>A Washing Machine State Machine</h4>
+                    </br>A conceptual outline of the states and transitions:
+                    </br>1- Idle: The machine is off, waiting for input.
+                    </br>2- Filling: Water is filling the drum.
+                    </br>3- Washing: The drum is rotating, washing the clothes.
+                    </br>4- Rinsing: The drum is rotating with fresh water to rinse the clothes.
+                    </br>5- Spinning: The drum spins at high speed to extract water.
+                    </br>6- Draining: Water is being pumped out of the drum.
+                    </br>7- Finished: The cycle is complete.
+                    </br>And here are the transitions:
+                    </br>- From Idle to Filling: Triggered by the "Start" button.
+                    </br>- From Filling to Washing: When the water level is sufficient.
+                    </br>- From Washing to Rinsing: After the wash cycle time is complete.
+                    </br>- From Rinsing to Spinning: After the rinse cycle time is complete.
+                    </br>- From Spinning to Draining: After the spin cycle time is complete.
+                    </br>- From Draining to Finished: When the drum is empty.
+                    </br>- From Finished to Idle: Automatically after a short period, or by user intervention.
+                    <h4>Reflection:</h4>
+                    Creating this model for a washing machine helps clarify the different stages a washing machine goes through. It's not just a linear sequence; there are implicit conditions (like water level) and timing considerations that drive the transitions. A state machine diagram makes these explicit.
+                    </br>This kind of modelling is immensely useful during the design phase. It helps ensure that all possible states and transitions are considered, preventing potential bugs and ensuring the system behaves as expected. It also serves as a great communication tool between developers, testers, and even non-technical stakeholders.
+                    </br>By using UML diagrams strategically throughout the SDLC, we can improve communication, reduce ambiguity, and ultimately build better software.
+                    <p>
+                    <h3></h3>  
+                    </p>
+                    <p>
+                    <h3></h3>
+                    
+                    </br>
+                    <img src=>
+                </p>
+                    <p>
+                        <strong>References:</strong><br>
+                        <ul>
+                            <li>Lucidchart (2024) Types of UML diagrams. Available at: https://www.lucidchart.com/blog/types-of-UML-diagrams (Accessed 3 November 2024)
+                            <li>Miro (2024) What are UML diagrams, and how can you use them?. Available at: https://miro.com/blog/uml-diagram/#:~:text=Most%20commonly%2C%20a%20UML%20diagram,UML%20diagram%20is%20incredibly%20helpful (Accessed 5 November 2024)</li>
+                            <li>Rumbaugh. J,.  Jacobson. I,. Booch,. G. (2005) The unified modeling language reference manual. 2nd edition.  Boston, Massachusetts: Addison-Wesley. Available at: https://www.oreilly.com/library/view/unified-modeling-language/0321245628/?sso_link=yes&sso_link_from=university-of-essex (Accessed 7 November 2024) </li>
+                            <li>Visual Paradigm (2024) Why UML Modeling? Available at: https://www.visual-paradigm.com/guide/uml-unified-modeling-language/why-uml-modeling/ (Accessed 5 November 2024)</li>
+                        </p>
+                </row>
+                </article>
+                <section class="wrapper style3 container special">
+
+                    <header class="major">
+                        <h2></h2>
+                    </header>
+                    <row>
+                        <p>
+                        <h2>Unit 1-3:</h2>
+                        <h4>Unit 1-3 work:</h4>
+                        </br>1. Design patterns- I think this is most important because it allows for work to be reused this would assist in consistency and remove the need to work out a solution to a problem that already exists, and it solved.
+                        </br>2. Requirement analysis- This factor is second because it would ensure that the project is clear and defined from the outset it would also allow for planning for reusing frameworks.
+                        </br>3. An algorithm used in the program- This factor is third because it allows algorithms to be created and reused in similar projects this would improve efficiency.
+                        </br>4. Test cases / test design- This factor is fourth because tests are created for each project but can be reused to test similar programs.
+                        </br>5. Used in the data project- This factor is fifth because it allows for the reuse of data within the project increasing reusability.
+                        </br>6. Documentation in project- This factor is sixth as it will allow for efficient planning and design that will be able draw on past projects and analyse which areas can be reworked and reutilised.
+                        </br>7. Architecture driven approach- This factor is seventh because it would ensure that the whole project is planned from the outset making a solid foundation that can be built upon it could potentially draw on past design but could also be completely new.
+                        </br>8. Knowledge requirement- This factor is eighth because it would allow for the development of project to be planned within the scope of the programmer’s capabilities, but this could remove the chance of reusing other areas of code.
+                        </br>9. Modules in the program- This factor is ninth because creating self-contained modules of code for different parts of the program will allow for better readability and make the program easier to review and bug check as each module can be looked at separately. But this could not involve the need for reusing old OOD.
+                        </br>10. Models in the project- This factor is tenth because it allows for potential ideas to be planned and tested before being implemented. This allows for improvement before a commitment is made. Again, this factor could involve the reusing of OOD or could not.
+                        </br>11. Service Contracts- This factor is eleventh because it would involve 2 or more parties and would likely be more specific to each project perhaps limiting its reusability.
+                        <h4>Reference:</h4>
+                        <li>Padhy, N., Satapathy, S., & Singh, R.P. (2018) ‘State-of-the-Art Object-Oriented Metrics and Its Reusability: A Decade Review’, Smart Computing and Informatics: Proceedings of the First International Conference on SCI 2016, Volume 1. Anil Neerukonda Institute Of Technology & Sciences in Visakhapatnam, India. 3-4th March 2017. Singapore: Springer Singapore Pte. Limited. 431- 441.</li>
+                        </p>
+                        <p>
+                        <h3>Unit 1-3 Reflection:</h3>  
+                        </br>The last 3 weeks have proved beneficial when it comes to thinking about the importance of code reusability. Code reusability as a concept seems to be underpinned by the idea of it provided more secure easier to read coding projects. Before this module code reusability was a concept, I had not paid much thought to, but I now see the importance of it and how classes and objects allow for this to be implemented. Having experimented with classes and objects in the past I realise that I was using them because I could, rather than because I fully grasped their positive attributes. I now see how classes and objects assist with reusability of code. 
+                        </br>Completing the ranking task within the forums I also found beneficial as it aided in my understanding of the stages of the design process and how this can be done to assist with code reusability it was interesting to engage with others and read their ideas and justifications as this caused me to reflect on my own ideas. 
+                        </p>
+                        <p>
+                        <h3></h3>
+                        
+                      
+                    </row>
+                </section>
+            <h2></h2>
+        </header>
+        <row>
+            <p>
+            <h2>Unit 5:</h2>
+            <h4>Work:</h4>
+            </br>The code (linked on learning platform) demonstrates the concept of inheritance in Python using two classes, Cat and Dog. Inheritance allows you to create new classes (subclasses) that inherit properties and functionalities from existing classes (superclasses).
+            </br>In the code, Cat and Dog are both subclasses of an implicit base class object. This means they inherit the basic functionalities of Python objects. By defining a class without explicitly inheriting from another, Python automatically assumes inheritance from object.
+            </br>Here's how inheritance is utilised in the code:
+            </br>1. Shared Attributes and Methods: Both Cat and Dog classes define attributes like name and age to store information about the animal. They also define methods like info to print details and make_sound to print the animal's sound. These shared attributes and methods represent the common characteristics of cats and dogs.
+            </br>2. Specialisation: While sharing common features, the classes also exhibit specialisation. Each class has its unique make_sound method that prints "Meow" for cats and "Bark" for dogs. This demonstrates how subclasses can inherit general behaviour from the superclass and redefine specific functionalities to suit their needs.
+            </br>3. Polymorphism: The for loop iterates through a list containing a Cat and a Dog object. In each iteration, the make_sound and info methods are called on the animal object. Since these methods are defined in the respective classes, the correct sound and information are printed based on the animal's type (cat or dog). This is an example of polymorphism, where objects of different subclasses can respond to the same method call with different behaviours.
+            <h4>Reference to the code:</h4>
+            <li>Programiz (2024) Polymorphism in Python. Available at: https://www.programiz.com/python-programming/polymorphism (Accessed 23 November 2024)</li>
+            <h4>Reflection:</h4>
+            </br>In essence, inheritance promotes code reusability and maintainability. By inheriting common functionalities, you can avoid code duplication and focus on defining the specific behaviours of each subclass. The concept of polymorphism allows you to write generic code that can work with different types of objects as long as they share a common base class. Inheritance is a concept that I feel will prove useful within professional coding projects in the future, but I am unsure as of yet how this will fit within my own project for this module based on what I have planned for a humanoid care robot. 
+            </p>
+            <p>
+            <h3></h3>  
+            </p>
+            <p>
+            <h3></h3>
+            </br>
+            <img src=>
+        </p>
+            <p>
+                <strong>References:</strong><br>
+                <ul>
+                  <li>Downey, A. (2015) Think Python How to Think Like a Computer Scientist. 2nd edition. Needham, Massachusetts: Green Tea Press. Available at: https://greenteapress.com/thinkpython2/thinkpython2.pdf (Accessed 25 November 2024)
+                    <li>Programiz (2024) Polymorphism in Python. Available at: https://www.programiz.com/python-programming/polymorphism (Accessed 23 November 2024)</li>
+                    
+                </ul>
+              </p>
+        </row>
+        <header class="major">
+            <h2></h2>
+        </header>
+        <row>
+            <p>
+            <h2>Unit 7:</h2>
+            <h4>Task 1:</h4>
+            </br>In Python, data structures like lists, dictionaries, and sets support object-oriented development by enabling encapsulation, abstraction, and modularity. Lists store collections of objects with methods like .append(), encapsulating complex operations. Dictionaries associate keys with objects, abstracting hashing and lookups, ideal for tasks like configuration management. Sets ensure unique elements and offer modular methods for operations like unions and intersections, useful in handling distinct object groups. These structures align seamlessly with Python’s object-oriented principles, promoting efficient and maintainable code.
+            <h4>References:</h4>
+            <li>Lutz, M. (2013) Learning Python. 5th edition. Sebastopol, CA: O’Reilly Media. Available at: https://www.oreilly.com/library/view/learning-python-5th/9781449355722/ (Accessed 20 December 2024)</li>
+            <h4>Task 2:</h4>
+            </br>Below is an image of the car class task for task 2.
+            </br><img src="./images/M3 images/unit7.png">
+            <h4>Reflection:</h4>
+            </br>This week’s work has allowed me to think more in depth about my use of data structures and their role in object-oriented programming. It has helped me to plan out the features of my robot and what data structures I could use for example I think a list would be good for a quiz feature I am planning. I am also thinking about what attributes my robot may need when creating my robot class. Overall, I think this week has assisted me in making more conscious decisions during my designing process. These are things that I have added into my system design document that was submitted. I think that this week helped me to properly think through my design decisions before submitting the document. 
+            </p>
+            <p>
+            <h3></h3>  
+            </p>
+            <p>
+            <h3></h3>
+            </br>
+        </p>
+            <p>
+                </ul>
+              </p>
+        </row>
+        <header class="major">
+            <h2></h2>
+        </header>
+        <row>
+            <p>
+            <h2>Unit 8:</h2>
+            <h4>Review of 'Think Python' chapter 5 and section 17.9:</h4>
+            </br>if Statements in python:
+            </br>- Decision Making: if statements are the cornerstone of decision-making in programming. They allow code to execute different blocks of code based on whether a certain condition is true or false. This enables programs to respond dynamically to various inputs and situations.
+            </br>- Control Flow: if statements, along with their companions elif (else if) and else, provide control over the flow of execution in a program. They enable the creation branches in code, determining which parts are executed and which are skipped.
+            </br>- Error Handling: if statements are invaluable for error handling. They can be used to check for potential errors or exceptional conditions and execute specific code to handle them gracefully, preventing the program from crashing.
+            </br>- User Interaction: if statements play a crucial role in creating interactive programs. They allow code to respond to user input, making applications more user-friendly.
+            </br>Polymorphism in python:
+            </br>- Flexibility and Extensibility: Polymorphism allows objects of different classes to be treated as objects of a common type. This provides great flexibility and extensibility within code. It can be used to easily add new classes without modifying existing code that interacts with them, as long as they adhere to the common interface.
+            </br>- Code Reusability: Polymorphism promotes code reusability. You can write generic code that works with objects of different classes, reducing redundancy and making the code more concise and maintainable.
+            </br>- Abstraction: Polymorphism enables abstraction by allowing the focus to be on the common interface of objects rather than their specific implementations. This simplifies code and makes it easier to understand and reason about.
+            </br>- Dynamic Dispatch: Polymorphism is often implemented using dynamic dispatch, which means that the actual method that is executed is determined at runtime based on the object's type. This allows for greater flexibility and adaptability within code.
+
+            </p>
+            <p>
+            <h3></h3>  
+            </p>
+            <p>
+        </p>
+            <p>
+                <strong>References:</strong><br>
+                <ul>
+                  <li>
+                    Downey, A. (2015) Think Python How to Think Like a Computer Scientist. 2nd edition. Needham, Massachusetts: Green Tea Press. Available at: https://greenteapress.com/thinkpython2/thinkpython2.pdf (Accessed 28 December 2024)
+                </ul>
+              </p>
+        </row>
+        <header class="major">
+            <h2></h2>
+        </header>
+        <row>
+            <p>
+            <h2>Unit 9:</h2>
+            <h4>Activity 1: Relevance of Cyclomatic Complexity in Object-Oriented Systems</h4>
+            </br>Cyclomatic complexity (CC), as defined by McCabe (1976), measures the number of linearly independent paths through a program's source code. While useful for procedural programming, its applicability to object-oriented (OO) systems is limited. CC focuses on control flow within individual methods, neglecting the complexities introduced by core OO principles.
+            </br>Limitations of CC in OO Contexts:
+            </br>- Inheritance and Polymorphism: These features introduce dynamic dispatch, where the actual method executed is determined at runtime. CC, being a static analysis metric, cannot fully capture the complexity arising from polymorphic behaviour (Chidamber & Kemerer, 1994). A single method call can lead to different execution paths depending on the object's type, which CC doesn't account for.
+            </br>- Object Interactions: OO systems are characterised by interactions between objects. CC focuses on intra-method complexity, disregarding the inter-object relationships and message passing that contribute significantly to overall system complexity (Li & Henry, 1993).
+            </br>Alternative Metrics for OO Complexity:
+            </br>Several metrics have been proposed to better capture the complexities of OO systems:
+            </br>- Weighted Methods per Class (WMC): This metric sums the complexity of all methods within a class. It provides a more comprehensive view of class complexity than simply considering the number of methods (Chidamber & Kemerer, 1994).
+            </br>- Depth of Inheritance Tree (DIT): This metric measures the length of the inheritance path from a class to the root of the inheritance hierarchy. Deeper inheritance hierarchies can indicate increased complexity due to potential code reuse and overriding complexities (Li & Henry, 1993).
+            </br>- Coupling Between Objects (CBO): This metric quantifies the number of classes to which a given class is coupled. High coupling can lead to increased complexity, reduced reusability, and increased maintenance effort (Chidamber & Kemerer, 1994).
+            </br>- Lack of Cohesion of Methods (LCOM): This metric measures the dissimilarity of methods within a class based on the attributes they access. High LCOM indicates low cohesion, which can suggest design flaws and increased complexity (Chidamber & Kemerer, 1994).
+            <h4>Activity 2: Relevance of Cyclomatic Complexity in Object-Oriented Code:</h4>
+            </br>Thinking about cyclomatic complexity in the context of OO code is like trying to understand a complex ecosystem by only counting a single type of organism.
+            </br>In OO programming, classes are like individual organisms, and their interactions are what truly define the system's complexity. CC only looks at the "paths" within a single method, ignoring the crucial relationships between objects, the inheritance hierarchies that define their behaviour, and the dynamic dispatch that makes OO systems so powerful.
+            </br>While CC can be useful for understanding the internal complexity of a single method, it's insufficient for grasping the overall complexity of an OO design. We need to consider other metrics that capture the essence of object-oriented principles, such as coupling, cohesion, and inheritance depth, to truly understand the "ecosystem" we've created. It is like using a microscope to view a forest. You can see the details of a single leaf, but you miss the forest for the trees.
+            <h4>Activity 3:</h4>
+            </br>Cyclomatic complexity is a way to measure how many independent paths exist in code. Each decision point (like an if statement) adds to the complexity.
+            </br>1. Every function starts with a base complexity of 1.
+            </br>2. Each if statement adds 1 to the complexity.
+            </br>In the code:
+            </br>There are 2 if statements: if (age >= 18) and if (name.Length > 7).
+            </br>Adding these to the base complexity (1), we get:
+            </br>1+1+1=31 + 1 + 1 = 31+1+1=3
+            </br>So, the cyclomatic complexity of the code is 3.
+            <h4>Activity 4:</h4>
+            </br>Below is an image of the code for task 4
+            </br><img src="./images/M3 images/uni9.JPG">
+            <h4>Reflection:</h4>
+            </br>I found the work this week very insightful as it helped me to understand assert testing in more detail and it allowed for me to practice its implementation within the fourth activity. These assert tests I have also began to implement within my own code I started by creating general assert tests (see image below). I created a separate file within my main project so that I can test individual elements with assert before implementing them within the main code. I tried this out on my quiz function to check that it was working correctly. I think this will assist ensuring the usability of the code. I also think this week I have started to view aspects of my projects less as isolated chunks of code nut rather as a whole picture this is helping me to spot issues early on. 
+            </br>Below is an image of the Assert tests I carried out:
+            </br><img src="./images/M3 images/unit92.png">
+            </p>
+            <p>
+            <h3></h3>  
+            </p>
+            <p>
+            <h3></h3>
+            </br>
+            <img src=>
+        </p>
+            <p>
+                <strong>References:</strong><br>
+                <ul>
+                  <li>Chidamber, S. R., Kemerer, C. F. (1994). ‘A metrics suite for object oriented design.’ IEEE Transactions on software engineering, 20(6),  476-493. DOI:10.1109/32.295895  
+                   <li>Li, W.,  Henry, S. (1993). ‘Object-oriented metrics that predict maintainability’. Journal of systems and software, 23(2), 111-122. DOI: 10.1016/0164-1212(93)90077-B</li>
+                    <li>McCabe, T. J. (1976). ‘A complexity measure’. IEEE Transactions on software engineering, 2(4), 308-320. DOI: 10.1109/TSE.1976.233837</li>
+                    <li>StackOverflow. (2012) What is the use of "assert" in Python?. Available at: https://stackoverflow.com/questions/5142418/what-is-the-use-of-assert-in-python (Accessed 7 November 2024)</li>
+                </ul>
+              </p>
+        </row>
+        <header class="major">
+            <h2></h2>
+        </header>
+        <row>
+            <p>
+            <h2>Units 8-10:</h2>
+            <h4>OO Design for IoT:</h4>
+            </br>The article by Fortino et al. (2015) refers to steps that can be taken when designing and implementing a smart robot or device. It follows 3 main steps within the design process these are creating an outline, then a detailed set of plans and finally creating a real device. This approach has several positives and negatives. 
+            </br>Positives:
+            </br>- Provides systematic approach to IoT system development
+            </br>- Supports seamless progression from conceptual design to implementation
+            </br>- Offers flexible metamodel architecture
+            </br>- Supports multi-phase development process
+            </br>- Demonstrates adaptability across different system types
+            </br>Negatives:
+            </br>- Adds complexity to development process
+            </br>- Potential performance overhead from multiple abstraction layers
+            </br>- Limited exploration of security and resource management
+            </br>- May introduce implementation gaps between design phases
+            </br>- Requires significant expertise to implement effectively
+            </br>- Not fully generalised across all IoT system types
+            </br>Key Takeaway: A promising but complex framework for developing sophisticated smart object systems that needs further refinement.
+            <h3></h3>
+            Below is an image of the diagram I created: 
+            </br>
+            <img src="./images/M3 images/unit10.png">
+            <p>
+            <h3></h3>  
+            </p>
+            <p>
+            
+        </p>
+            <p>
+                <strong>References:</strong><br>
+                <ul>
+                  <li>
+                    Fortino, G., Guerrieri, A., Russo, W. & Savaglio, C. (2015). ‘Towards a Development Methodology for Smart Object-Oriented IoT Systems: A Metamodel Approach’. 2015 IEEE International Conference on Systems, Man, and Cybernetics. 1297-1302. DOI: 10.1109/SMC.2015.231. 
+                </ul>
+              </p>
+        </row>
+        <header class="major">
+            <h2>Object Oriented Programming: Final reflection</h2>
+        </header>
+        <row>
+            <p>
+            </br>This reflection on the Object-Oriented Programming (OOP) module will focus on four key areas: learning, planning, execution, and testing. Now that the module has concluded, I find it valuable to assess my growth and understanding in these areas, considering how my approach and skills have evolved.
+            <h4>Learning</h4>
+            </br>One of the most significant aspects of this module was how it enhanced my grasp of core programming concepts, particularly classes and objects. These concepts had previously felt abstract to me, but with the guidance provided during the module, my understanding has deepened considerably. By using the book Think Python (2015) my coding abilities have much improved by working through the exercises and examples in the text. Prior to the module I had a firm grasp of conditional statements and loops but struggled with the principles and applications of OOP.
+            </br>The combination of Think Python (2015) and the tasks within the module helped solidify my confidence in my abilities. The exercises not only built my technical skills but also gave me a clearer understanding of how OOP principles enhance the creation of reusable and maintainable code. Before the module I didn’t think about the importance of code reusability and how this may be important especially in an industry setting. Through the learning within this module, I have come to recognise the importance of OOP in industry and how it will be an important factor in the future in terms of employment.
+            <h4>Planning</h4>
+            </br>Reflecting on my approach to planning, I can see how it has evolved throughout the module. Beforehand, my planning process was often ad hoc—I would begin coding without a clear, structured outline of the project. While this worked for smaller, personal projects, it frequently led to issues when I attempted larger, more complex ones.
+            </br>During this module, I utilised resources such as Padhy et al. (2018) and Rumbaugh et al.'s ‘Unified Modeling Language Reference Manual, The Second Edition’ (2004). These resources introduced the use of UML diagrams and how they can be used to plan coding projects. Initially, I found UML diagrams somewhat intimidating, but through practice, they became invaluable tools. For instance, when designing my robot project, creating Class and Activity diagrams helped me visualise the program’s structure and functionality clearly. 
+            </br>The use of UML diagrams allowed me to think about what processes the robot would need to perform and what ideas or areas I had researched may have been beyond my scope. I found using the UML diagrams I managed to streamline my coding process and minimise the need for sections of code to be rewritten and reworked. UML diagrams are something that I will be utilising in future to assist with future coding projects.
+            <h4>Execution</h4>
+            </br>My approach to code execution has also undergone a significant transformation. Before this module, my coding style was disorganised. I rarely used comments, and my code often reflected a “write-as-you-go” mindset. This approach worked for quick experiments but lacked the structure required for more polished and professional results.
+            </br>Looking at the approaches in the time1.py and time2.py files in unit 2 helped me to understand the overall appearance of object oriented programming which assisting me in writing my own program. As I progressed, I began incorporating comments more consistently, guided by Nehme’s (2024) advice on Python commenting practices. By adopting these strategies, I developed a more organised and readable coding style, making it easier to maintain and debug my programs.
+            </br>One specific instance of adaptation during execution was my decision to use deques instead of dictionaries for the object_held and all_commands variables in my robot project. This decision was made due to issues with the functionality of the dictionaries and my aim to include stack and queues within the program to simulate an actual robot.
+            </br>Ultimately, this module helped me appreciate the significance of writing reusable and maintainable code. I now see how well-organised code not only benefits individual projects but also aligns with industry expectations and facilitates collaboration in team environments.
+            <h4>Testing</h4>
+            </br>Testing is another area where I experienced notable growth. Before this module, I had a limited understanding of structured testing practices. My previous approach was largely informal, relying on trial and error without any systematic method. The introduction of assert testing within the module made my testing approach much more structured. 
+            </br>To build confidence with assert testing, I initially practiced using examples and explanations from forums such as StackOverflow (2012). This practice allowed me to understand how assert tests function and how they could be applied effectively in my own projects. In my robot project, assert tests became an integral part of my workflow. I used them to validate individual sections of code before integrating them into the larger program. For example, during the development of the quiz component, I experimented with different data structures for the questions. By using assert tests, I was able to iterate on my approach without introducing bugs or instability into the rest of the code.
+            </br>In addition to assert testing, I incorporated user testing and employed a linter as recommended by Gregg (2022). Using a linter helped me spot errors and improve the readability of my code. Initially, I had reservations about using linters due to a less-than-successful attempt in a previous module, but Gregg’s guidance helped me approach them with confidence. I found that the linter not only identified errors but also encouraged me to adhere to best practices, further improving the quality of my code.
+            </br>By combining assert testing, user testing, and linting, I developed a more robust approach to testing that I will carry forward into future projects. These practices ensured that my code was reliable, efficient, and ready for real-world applications.
+            <h4>Conclusion</h4>
+            </br>Reflecting on this journey, I feel more confident in my programming skills and better equipped to tackle future challenges. The insights and practices gained from this module will undoubtedly serve as a strong foundation for my ongoing development as a programmer. I look forward to applying these lessons in both academic and professional settings, building on the progress I have made during this module.
+            </p>
+            <p>
+            <h3></h3>  
+            </p>
+            <p>
+        </p>
+            <p>
+                <strong>References:</strong><br>
+                <ul>
+                  <li>Downey, A. (2015) Think Python How to Think Like a Computer Scientist. 2nd edition. Needham, Massachusetts: Green Tea Press. Available at: https://greenteapress.com/thinkpython2/thinkpython2.pdf (Accessed 23 January 2025)
+                    <li>Gregg, P,. Mitchell, M. (2022) Stylising your Python code: An introduction to linting and formatting. Available at: https://www.jumpingrivers.com/blog/python-linting-guide/ (Accessed 23 January 2025)</li>
+                    <li>Nehme, A. (2024) How to Comment Out a Block of Code in Python. Available at: https://www.datacamp.com/tutorial/python-block-comment (Accessed 23 January 2025)</li>
+                    <li>Padhy, N., Satapathy, S., & Singh, R.P. (2018) ‘State-of-the-Art Object-Oriented Metrics and Its Reusability: A Decade Review’, Smart Computing and Informatics: Proceedings of the First International Conference on SCI 2016, Volume 1. Anil Neerukonda Institute Of Technology & Sciences in Visakhapatnam, India. 3-4th March 2017. Singapore: Springer Singapore Pte. Limited. 431- 441.</li>
+                    <li>Rumbaugh. J,.  Jacobson. I,. Booch,. G. (2005) The unified modeling language reference manual. 2nd edition.  Boston, Massachusetts: Addison-Wesley. Available at: https://www.oreilly.com/library/view/unified-modeling-language/0321245628/?sso_link=yes&sso_link_from=university-of-essex (Accessed 23 January 2025) </li>
+                    <li>StackOverflow. (2012) What is the use of "assert" in Python?. Available at: https://stackoverflow.com/questions/5142418/what-is-the-use-of-assert-in-python (Accessed 23 January 2025)</li>
+                </ul>
+              </p>
+        </row>
+    </article>
+		
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="icons">
+						<li><a href="https://x.com/gnh_98" class="icon brands circle fa-twitter"><span class="label">Twitter</span></a></li>
+						
+						
+						<li><a href="https://github.com/GeorgiaNiamh" class="icon brands circle fa-github"><span class="label">Github</span></a></li>
+						
+					</ul>
+
+					<ul class="copyright">
+						<li>&copy; GeorgiaNiamh</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
